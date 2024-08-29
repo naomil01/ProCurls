@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product Filter for textured hair products</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Product Filter Name and page heading-->
+   <!--Made a change in html using javascript-->
+   <h1 id="myh1"></h1>
+   <h2> Welcome to the Textured Hair Care Product Filter</h2>
+   <!-- Search input area-->
+<div class="wrapper">
+   <div id="search-container">
+<input type="search"
+id="search-input"
+placeholder="Search for a product here ...."
+/>
+<!-- Search button -->
+<button id="search">Search</button>
+   </div>
+   <!-- Select buttons area-->
+   <div id="buttons">
+   <button class="button-value" onclick="filterProduct('All')">ALL</button>
+   <button class="button-value" onclick="filterProduct('Shampoo')">SHAMPOO</button>
+   <button class="button-value" onclick="filterProduct('Conditioner')">CONDITIONER</button>
+   <button class="button-value" onclick="filterProduct('Moisturizer')"> MOISTURIZER</button>
+   <button class="button-value" onclick="filterProduct('Oils')">OILS</button>
+   </div>
+<div id="products"></div>
+
+<!-- Manipulating HTML elements using Javascript to display images-->
+<div class="imgContainer" id="img"></div>
+</div>
+
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
